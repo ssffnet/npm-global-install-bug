@@ -1,0 +1,14 @@
+{
+  "name": "global-prepare-bin-bug",
+  "version": "1.0.0",
+  "description": "Global npm from repo fails when prepare and bin are together.",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo build",
+    "prepare": "echo prepare"
+  },
+  "bin": {
+      "hello": "index.js"
+  },
+  "license": "ISC"
+}
