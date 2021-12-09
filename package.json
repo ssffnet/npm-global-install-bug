@@ -4,11 +4,14 @@
   "description": "Global npm from repo fails when prepare and bin are together.",
   "main": "index.js",
   "scripts": {
-    "build": "echo build",
-    "prepare": "echo prepare"
+    "build": "echo build > build.executed.txt",
+    "prepare": "echo prepare > prepare.executed.txt",
+    "preinstall": "echo preinstall > preinstall.executed.txt",
+    "install": "echo install > install.executed.txt",
+    "postinstall": "echo postinstall > postinstall.executed.txt"
   },
   "bin": {
-      "hello": "index.js"
+    "hello": "index.js"
   },
   "license": "ISC"
 }
